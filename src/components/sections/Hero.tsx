@@ -24,7 +24,6 @@ export function Hero() {
             className="absolute inset-0 w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-black/50" />
-          <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-b from-transparent to-surface" />
         </div>
 
         {/* Conteúdo */}
