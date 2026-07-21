@@ -21,9 +21,9 @@ export function Hero() {
           <img
             src={images.background}
             alt="Maçãs frescas sobre fundo vermelho"
-            className="absolute inset-0 w-full h-full object-cover object-center opacity-40"
+            className="absolute inset-0 w-full h-full object-cover object-center"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-surface via-surface/90 to-surface/20" />
+          <div className="absolute inset-0 bg-black/50" />
         </div>
 
         {/* Conteúdo */}
