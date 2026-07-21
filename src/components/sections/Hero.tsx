@@ -30,10 +30,10 @@ export function Hero() {
         <div className="relative z-10 w-full max-w-7xl mx-auto px-20 grid grid-cols-2 gap-4 items-center">
           {/* Coluna de Texto */}
           <div className="flex flex-col gap-6 max-w-2xl">
-            <h1 className="text-[48px] font-bold leading-[56px] tracking-[-0.02em] text-on-surface">
+            <h1 className="text-[48px] font-bold leading-[56px] tracking-[-0.02em] text-white">
               Transforme sua saúde através de uma alimentação equilibrada e prazerosa
             </h1>
-            <p className="text-lg text-on-surface-variant leading-relaxed mt-2">
+            <p className="text-lg text-white/80 leading-relaxed mt-2">
               Acompanhamento nutricional personalizado para você alcançar sua melhor versão de forma leve,
               equilibrada e sem terrorismo nutricional.
             </p>
