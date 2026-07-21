@@ -9,6 +9,8 @@ const images = {
     'https://lh3.googleusercontent.com/aida-public/AB6AXuAK0xMwjFqwE96g_krs-cCwLy_NvP6CYqV2XT2zylXAGO4CyeF2G_0tTCLYhLp_Y1iAFg8sQSa9TFBas2FMKbOPkaraeMvFTmtg7bsfhaJeVk_ekZyD4V6Xzm4zdka_lSoKjfiiTMWQAIqBgYkcJKBDQmXR0BGktXbpALNKrT_1luUlWm_gvmwLn4ls3Ik50kVsJJD_Q9YSWtQSmgfiswsrLNlrdV6Z985oVIzoehWCAF66zlXR_8MuwmKZCtO3Yqp_uWuHA-1Css8',
 }
 
+import { WHATSAPP_LINK } from '../../config/whatsapp'
+
 export function Hero() {
   return (
     <>
@@ -37,7 +39,9 @@ export function Hero() {
             </p>
             <div className="flex gap-4 mt-6">
               <a
-                href="#contato"
+                href={WHATSAPP_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-primary text-on-primary text-sm font-semibold px-8 py-4 rounded-xl hover:bg-primary-container transition-all duration-300 shadow-lg shadow-primary/20 flex items-center justify-center gap-2 group"
               >
                 Agende sua consulta
@@ -93,7 +97,9 @@ export function Hero() {
 
           {/* Botão CTA */}
           <a
-            href="#contato"
+            href={WHATSAPP_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-primary text-on-primary font-semibold py-4 px-8 rounded-full shadow-lg mt-4 active:scale-95 transition-transform flex items-center gap-2"
           >
             <span>Agende sua consulta</span>
