@@ -43,7 +43,7 @@ export function Header() {
   }, [])
 
   return (
-    <header className="bg-surface/90 backdrop-blur-md border-b border-outline-variant/30 shadow-sm sticky top-0 z-50">
+    <header className="bg-surface/50 backdrop-blur-md border-b border-outline-variant/20 shadow-sm sticky top-0 z-50">
       <div className="flex justify-between items-center w-full px-5 md:px-20 py-4 max-w-7xl mx-auto">
         {/* Logo */}
         <a
