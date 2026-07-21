@@ -1,4 +1,5 @@
 import { Menu } from 'lucide-react'
+import { WHATSAPP_LINK } from '../../config/whatsapp'
 
 interface HeaderProps {
   onMenuOpen: () => void
@@ -43,7 +44,7 @@ export function Header({ onMenuOpen }: HeaderProps) {
 
         {/* Desktop CTA */}
         <a
-          href="https://wa.me/5521995408157?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20planejamento%20nutricional%20com%20Beatriz%20Fiandrini"
+          href={WHATSAPP_LINK}
           target="_blank"
           rel="noopener noreferrer"
           className="hidden md:inline-flex bg-primary text-on-primary text-sm font-semibold px-6 py-3 rounded-full hover:bg-primary-container hover:text-on-primary-container transition-colors shadow-sm items-center gap-2"

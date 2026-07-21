@@ -1,4 +1,5 @@
 import { Button } from '../ui/Button'
+import { WHATSAPP_LINK } from '../../config/whatsapp'
 
 const profileImage =
   'https://lh3.googleusercontent.com/aida-public/AB6AXuD1ciuU46CY4yTn2_FAuxZkX151MYsLfhNnSU2aHGck0XGmdWoeXdIemk4_iAkDQ1EEO2A-W3NYKcfyk9nVPZ0oO7YbJH15l65s5xD1werpWLnq900L3tEDCSytdkVM6YH0zGXhc56x0CVhVFS0AA6o07tJo0VincUgTq0pEysCo3eznuNgYI98xI46zDQ19Z4EDPwKmB_rwnmuy0yAz71-qCcvGw2jTYQGCfawmA--G4R9xjePWlx3QCNkxjEpKCBv5PyW7G5VR_g'
@@ -51,7 +52,7 @@ export function About() {
           </p>
           <div className="mt-4">
             <a
-              href="https://wa.me/5521995408157?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20planejamento%20nutricional%20com%20Beatriz%20Fiandrini"
+              href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
             >
