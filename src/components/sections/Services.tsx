@@ -34,7 +34,7 @@ export function Services() {
           alt="Background morangos"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-surface via-surface/40 to-surface/80" />
+        <div className="absolute inset-0 bg-black/30" />
       </div>
 
       <div className="relative z-10 w-full max-w-7xl mx-auto px-5 md:px-20">
