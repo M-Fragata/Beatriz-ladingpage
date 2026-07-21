@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import { Menu } from 'lucide-react'
 import { WHATSAPP_LINK } from '../../config/whatsapp'
 
@@ -6,7 +7,7 @@ interface HeaderProps {
 }
 
 const navLinks = [
-  { href: '#', label: 'Início', active: true },
+  { href: '#', label: 'Início' },
   { href: '#servicos', label: 'Serviços' },
   { href: '#beneficios', label: 'Benefícios' },
   { href: '#sobre', label: 'Sobre Mim' },
@@ -14,6 +15,38 @@ const navLinks = [
 ]
 
 export function Header({ onMenuOpen }: HeaderProps) {
+  const [activeHash, setActiveHash] = useState('#')
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = navLinks.map((link) => {
+        const id = link.href === '#' ? 'hero' : link.href.slice(1)
+        return document.getElementById(id)
+      })
+
+      const scrollY = window.scrollY + 100
+      const isAtBottom = window.innerHeight + window.scrollY >= document.body.offsetHeight - 150
+
+      if (isAtBottom) {
+        setActiveHash('#contato')
+        return
+      }
+
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const section = sections[i]
+        if (section && section.offsetTop <= scrollY) {
+          setActiveHash(navLinks[i].href)
+          return
+        }
+      }
+      setActiveHash('#')
+    }
+
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    handleScroll()
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   return (
     <header className="bg-surface/90 backdrop-blur-md border-b border-outline-variant/30 shadow-sm sticky top-0 z-50">
       <div className="flex justify-between items-center w-full px-5 md:px-20 py-4 max-w-7xl mx-auto">
@@ -32,7 +65,7 @@ export function Header({ onMenuOpen }: HeaderProps) {
               key={link.href}
               href={link.href}
               className={`text-sm font-semibold px-3 py-2 rounded-lg transition-all ${
-                link.active
+                activeHash === link.href
                   ? 'text-primary border-b-2 border-primary pb-1'
                   : 'text-on-surface-variant hover:text-primary hover:bg-primary/5'
               }`}

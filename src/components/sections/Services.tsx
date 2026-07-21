@@ -26,7 +26,7 @@ const bgImage =
 
 export function Services() {
   return (
-    <section className="relative min-h-screen flex items-center py-24 overflow-hidden">
+    <section id="servicos" className="relative min-h-screen flex items-center py-24 overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img

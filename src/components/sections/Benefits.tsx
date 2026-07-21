@@ -28,7 +28,7 @@ const bgImage =
 
 export function Benefits() {
   return (
-    <section className="relative min-h-screen flex items-center py-24 bg-primary overflow-hidden">
+    <section id="beneficios" className="relative min-h-screen flex items-center py-24 bg-primary overflow-hidden">
       <div className="relative z-10 w-full max-w-7xl mx-auto px-5 md:px-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Coluna Esquerda: Conteúdo & Cards */}

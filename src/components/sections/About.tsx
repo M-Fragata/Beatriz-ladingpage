@@ -9,7 +9,7 @@ const profileImageMobile =
 
 export function About() {
   return (
-    <section className="relative min-h-screen flex items-center py-24 bg-surface-container-low">
+    <section id="sobre" className="relative min-h-screen flex items-center py-24 bg-surface-container-low">
       <div className="w-full max-w-7xl mx-auto px-5 md:px-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Coluna Esquerda: Imagem (Desktop) */}
         <div className="hidden lg:flex justify-start">

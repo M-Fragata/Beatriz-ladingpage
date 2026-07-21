@@ -15,7 +15,7 @@ export function Hero() {
   return (
     <>
       {/* ═══════════ DESKTOP ═══════════ */}
-      <section className="relative min-h-[90vh] items-center pt-20 pb-24 overflow-hidden hidden lg:flex">
+      <section id="hero" className="relative min-h-[90vh] items-center pt-20 pb-24 overflow-hidden hidden lg:flex">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img
@@ -68,7 +68,7 @@ export function Hero() {
       </section>
 
       {/* ═══════════ MOBILE ═══════════ */}
-      <section className="relative min-h-[90vh] flex flex-col justify-end pb-12 lg:hidden">
+      <section id="hero" className="relative min-h-[90vh] flex flex-col justify-end pb-12 lg:hidden">
         {/* Background */}
         <div className="absolute inset-0 z-0">
           <img
