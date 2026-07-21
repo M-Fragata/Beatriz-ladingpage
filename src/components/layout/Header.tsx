@@ -1,10 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Menu } from 'lucide-react'
 import { WHATSAPP_LINK } from '../../config/whatsapp'
-
-interface HeaderProps {
-  onMenuOpen: () => void
-}
 
 const navLinks = [
   { href: '#', label: 'Início' },
@@ -14,7 +9,7 @@ const navLinks = [
   { href: '#contato', label: 'Contatos' },
 ]
 
-export function Header({ onMenuOpen }: HeaderProps) {
+export function Header() {
   const [activeHash, setActiveHash] = useState('#')
 
   useEffect(() => {
@@ -84,14 +79,6 @@ export function Header({ onMenuOpen }: HeaderProps) {
         >
           Agendar Consulta
         </a>
-
-        {/* Mobile Menu Button */}
-        <button
-          onClick={onMenuOpen}
-          className="md:hidden text-on-surface-variant p-2 rounded-lg hover:bg-surface-variant/50 transition-colors cursor-pointer"
-        >
-          <Menu className="w-6 h-6" />
-        </button>
       </div>
     </header>
   )
