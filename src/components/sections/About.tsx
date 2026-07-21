@@ -50,13 +50,19 @@ export function About() {
             sustentável e, acima de tudo, prazeroso.
           </p>
           <div className="mt-4">
-            <Button
-              variant="primary"
-              size="lg"
-              iconPosition="right"
+            <a
+              href="https://wa.me/5521995408157?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20planejamento%20nutricional%20com%20Beatriz%20Fiandrini"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Agendar Consulta
-            </Button>
+              <Button
+                variant="primary"
+                size="lg"
+                iconPosition="right"
+              >
+                Agendar Consulta
+              </Button>
+            </a>
           </div>
         </div>
       </div>
