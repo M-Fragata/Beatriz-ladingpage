@@ -80,7 +80,7 @@ export function Hero() {
         </div>
 
         {/* Conteúdo */}
-        <div className="relative z-10 px-5 flex flex-col items-center text-center gap-6 mt-20">
+        <div className="relative z-10 px-5 flex flex-col items-center text-center gap-6 ">
           {/* Foto de Perfil */}
           <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-surface shadow-warm mb-4">
             <img
